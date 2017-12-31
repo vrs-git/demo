@@ -4,11 +4,11 @@
 
 <div class="border-form-div">
 
-<h2>Log in</h2>
+<h2>Customer Login</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 <div class="form-group">
-    <p><%= f.label :login %><br />
+    <p><%= f.label :mobile_or_email%><br />
     <%= f.text_field :login , autofocus: true  %></p>
    
   </div>
