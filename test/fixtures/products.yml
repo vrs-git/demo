@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_name: MyString
+  MRP: 1
+  SP: 1
+  discount: 1
+  active: false
+  instock: false
+  warranty_summary: MyString
+  highlights: MyString
+  imp_note: MyString
+  owner_id: 
+  category_id: 
+  seller_name: MyString
+  full_desp: MyText
+  specification: MyString
+  installation: MyString
+  unit_in_order: 1
+  unit_in_stock: 1
+  unit_length: 1
+  unit_bredth: MyString
+  unit_height: 1
+  unit_weight: 1
+  additional_features: MyText
+
+two:
+  product_name: MyString
+  MRP: 1
+  SP: 1
+  discount: 1
+  active: false
+  instock: false
+  warranty_summary: MyString
+  highlights: MyString
+  imp_note: MyString
+  owner_id: 
+  category_id: 
+  seller_name: MyString
+  full_desp: MyText
+  specification: MyString
+  installation: MyString
+  unit_in_order: 1
+  unit_in_stock: 1
+  unit_length: 1
+  unit_bredth: MyString
+  unit_height: 1
+  unit_weight: 1
+  additional_features: MyText
