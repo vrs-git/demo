@@ -1,3 +1,28 @@
-<h1>DashBoard</h1>
+<div class="container-narrow">
+  <div class="masthead">
+<ul class="nav nav-pills pull-right">
+  <li><%= link_to "Sign out", destroy_owner_session_path, :method => :delete %></li>
 
-<li  id= "signout"><%= link_to "Sign Out",destroy_user_session_path,method: :delete %></li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div class="jumbotron">
+  <% if owner_signed_in? %>
+    <h1>Welcome back, trusted seller!</h1>
+    <p class="lead">
+      You have signed in!
+    </p>
+  <% else %>
+    <h1>Welcome, new seller!</h1>
+    <p class="lead">
+      You must sign in or sign up before you can access our content.
+    </p>
+   <% end %>
+
+   </div>
+
+
