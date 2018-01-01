@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product name</th>
+      <th>Mrp</th>
+      <th>Sp</th>
+      <th>Discount</th>
+      <th>Active</th>
+      <th>Instock</th>
+      <th>Warranty summary</th>
+      <th>Highlights</th>
+      <th>Imp note</th>
+      <th>Owner</th>
+      <th>Category</th>
+      <th>Seller name</th>
+      <th>Full desp</th>
+      <th>Specification</th>
+      <th>Installation</th>
+      <th>Unit in order</th>
+      <th>Unit in stock</th>
+      <th>Unit length</th>
+      <th>Unit bredth</th>
+      <th>Unit height</th>
+      <th>Unit weight</th>
+      <th>Additional features</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.product_name %></td>
+        <td><%= product.MRP %></td>
+        <td><%= product.SP %></td>
+        <td><%= product.discount %></td>
+        <td><%= product.active %></td>
+        <td><%= product.instock %></td>
+        <td><%= product.warranty_summary %></td>
+        <td><%= product.highlights %></td>
+        <td><%= product.imp_note %></td>
+        <td><%= product.owner %></td>
+        <td><%= product.category.category_name %></td>
+        <td><%= product.seller_name %></td>
+        <td><%= product.full_desp %></td>
+        <td><%= product.specification %></td>
+        <td><%= product.installation %></td>
+        <td><%= product.unit_in_order %></td>
+        <td><%= product.unit_in_stock %></td>
+        <td><%= product.unit_length %></td>
+        <td><%= product.unit_bredth %></td>
+        <td><%= product.unit_height %></td>
+        <td><%= product.unit_weight %></td>
+        <td><%= product.additional_features %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>

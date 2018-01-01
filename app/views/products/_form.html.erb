@@ -1,0 +1,132 @@
+<%= form_for @product, html: { multipart: true }  do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :product_name %><br>
+    <%= f.text_field :product_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image_1 %><br>
+    <%= f.file_field :image_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image_2 %><br>
+    <%= f.file_field :image_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image_3 %><br>
+    <%= f.file_field :image_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image_4 %><br>
+    <%= f.file_field :image_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image_5 %><br>
+    <%= f.file_field :image_5%>
+  </div>
+
+  <div class="field">
+    <%= f.label :MRP %><br>
+    <%= f.number_field :MRP %>
+  </div>
+  <div class="field">
+    <%= f.label :SP %><br>
+    <%= f.number_field :SP %>
+  </div>
+  <div class="field">
+    <%= f.label :discount %><br>
+    <%= f.number_field :discount %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.check_box :active %>
+  </div>
+  <div class="field">
+    <%= f.label :instock %><br>
+    <%= f.check_box :instock %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty_summary %><br>
+    <%= f.text_field :warranty_summary %>
+  </div>
+  <div class="field">
+    <%= f.label :highlights %><br>
+    <%= f.text_field :highlights %>
+  </div>
+  <div class="field">
+    <%= f.label :imp_note %><br>
+    <%= f.text_field :imp_note %>
+  </div>
+  <div class="field">
+    <%= f.label :owner_id %><br>
+    <%= f.text_field :owner_id %>
+  </div>
+ 
+  <div class="field">
+    <%= f.label :category_id %><br>
+    <%= f.select(:category_id, categories_for_select, :prompt => 'Select') %>
+  </div>
+  <div class="field">
+    <%= f.label :seller_name %><br>
+    <%= f.text_field :seller_name %>
+  </div>
+  <div class="field">
+    <%= f.label :full_desp %><br>
+    <%= f.text_area :full_desp %>
+  </div>
+  <div class="field">
+    <%= f.label :specification %><br>
+    <%= f.text_field :specification %>
+  </div>
+  <div class="field">
+    <%= f.label :installation %><br>
+    <%= f.text_field :installation %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_in_order %><br>
+    <%= f.number_field :unit_in_order %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_in_stock %><br>
+    <%= f.number_field :unit_in_stock %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_length %><br>
+    <%= f.number_field :unit_length %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_bredth %><br>
+    <%= f.text_field :unit_bredth %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_height %><br>
+    <%= f.number_field :unit_height %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_weight %><br>
+    <%= f.number_field :unit_weight %>
+  </div>
+  <div class="field">
+    <%= f.label :additional_features %><br>
+    <%= f.text_area :additional_features %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
