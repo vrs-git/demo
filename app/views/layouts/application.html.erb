@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <title>EComm</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -8,8 +9,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= link_to 'Owner', new_owner_session_path %>
- <%= yield %>
+<div class="container-narrow">
+  <div class="masthead">
+    <%= render 'layouts/user_header' %>
+    <h3 class="muted"><%= link_to "Amazon Beta", root_path %></h3>
+
+  </div>
+  <hr />
+  <%= yield %>
+</div>
+
+
 
 </body>
 </html>
