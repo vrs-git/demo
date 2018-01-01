@@ -7,7 +7,7 @@
 
 <p>
   <strong>Cat photo:</strong>
-  <%= @category.cat_photo %>
+  <%=  image_tag @category.cat_photo.url(:medium) %>
 </p>
 
 <p>

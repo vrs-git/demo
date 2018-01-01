@@ -5,6 +5,35 @@
   <%= @product.product_name %>
 </p>
 
+
+ <p>
+   <strong>Image 1</strong>
+    <%=  image_tag @product.image_1.url(:medium) %>
+
+</p>
+ <p>
+   <strong>Image 2</strong>
+    <%=  image_tag @product.image_2.url(:medium) %>
+
+</p>
+ <p>
+   <strong>Image 3</strong>
+    <%=  image_tag @product.image_3.url(:medium) %>
+
+</p>
+ <p>
+   <strong>Image 4</strong>
+    <%=  image_tag @product.image_4.url(:medium) %>
+
+</p>
+ <p>
+   <strong>Image 5</strong>
+    <%=  image_tag @product.image_5.url(:medium) %>
+
+</p>
+
+
+
 <p>
   <strong>Mrp:</strong>
   <%= @product.MRP %>
@@ -52,7 +81,7 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @product.category %>
+  <%= @product.category.category_name %>
 </p>
 
 <p>

@@ -77,6 +77,7 @@ class ProductsController < ApplicationController
         :highlights, :imp_note, :owner_id, :category_id, :seller_name,
          :full_desp, :specification, :installation, :unit_in_order,
           :unit_in_stock, :unit_length, :unit_bredth, :unit_height,
-           :unit_weight, :additional_features)
+           :unit_weight, :additional_features, :image_1,:image_2,:image_3,
+           :image_4, :image_5)
     end
 end

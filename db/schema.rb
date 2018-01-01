@@ -11,14 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180101124636) do
+ActiveRecord::Schema.define(version: 20180101204536) do
 
   create_table "categories", force: :cascade do |t|
-    t.string   "category_name", null: false
-    t.string   "cat_photo"
-    t.boolean  "cat_status",    null: false
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.string   "category_name",          null: false
+    t.boolean  "cat_status",             null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "cat_photo_file_name",    null: false
+    t.string   "cat_photo_content_type", null: false
+    t.integer  "cat_photo_file_size",    null: false
+    t.datetime "cat_photo_updated_at",   null: false
   end
 
   create_table "owners", force: :cascade do |t|
@@ -42,35 +45,50 @@ ActiveRecord::Schema.define(version: 20180101124636) do
   add_index "owners", ["reset_password_token"], name: "index_owners_on_reset_password_token", unique: true
 
   create_table "products", force: :cascade do |t|
-    t.string   "product_name",        null: false
-    t.integer  "MRP",                 null: false
-    t.integer  "SP",                  null: false
-    t.integer  "discount",            null: false
-    t.boolean  "active",              null: false
-    t.boolean  "instock",             null: false
-    t.string   "warranty_summary",    null: false
-    t.string   "highlights",          null: false
+    t.string   "product_name",         null: false
+    t.integer  "MRP",                  null: false
+    t.integer  "SP",                   null: false
+    t.integer  "discount",             null: false
+    t.boolean  "active",               null: false
+    t.boolean  "instock",              null: false
+    t.string   "warranty_summary",     null: false
+    t.string   "highlights",           null: false
     t.string   "imp_note"
-    t.integer  "owner_id",            null: false
-    t.integer  "category_id",         null: false
-    t.string   "seller_name",         null: false
-    t.text     "full_desp",           null: false
-    t.string   "specification",       null: false
+    t.integer  "owner_id",             null: false
+    t.integer  "category_id",          null: false
+    t.string   "seller_name",          null: false
+    t.text     "full_desp",            null: false
+    t.string   "specification",        null: false
     t.string   "installation"
-    t.integer  "unit_in_order",       null: false
-    t.integer  "unit_in_stock",       null: false
-    t.integer  "unit_length",         null: false
-    t.integer  "unit_bredth",         null: false
-    t.integer  "unit_height",         null: false
-    t.integer  "unit_weight",         null: false
+    t.integer  "unit_in_order",        null: false
+    t.integer  "unit_in_stock",        null: false
+    t.integer  "unit_length",          null: false
+    t.integer  "unit_bredth",          null: false
+    t.integer  "unit_height",          null: false
+    t.integer  "unit_weight",          null: false
     t.text     "additional_features"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
-    t.string   "photo_1",             null: false
-    t.string   "photo_2",             null: false
-    t.string   "photo_3",             null: false
-    t.string   "photo_4"
-    t.string   "photo_5"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.string   "image_1_file_name",    null: false
+    t.string   "image_1_content_type", null: false
+    t.integer  "image_1_file_size",    null: false
+    t.datetime "image_1_updated_at",   null: false
+    t.string   "image_2_file_name",    null: false
+    t.string   "image_2_content_type", null: false
+    t.integer  "image_2_file_size",    null: false
+    t.datetime "image_2_updated_at",   null: false
+    t.string   "image_3_file_name",    null: false
+    t.string   "image_3_content_type", null: false
+    t.integer  "image_3_file_size",    null: false
+    t.datetime "image_3_updated_at",   null: false
+    t.string   "image_4_file_name"
+    t.string   "image_4_content_type"
+    t.integer  "image_4_file_size"
+    t.datetime "image_4_updated_at"
+    t.string   "image_5_file_name"
+    t.string   "image_5_content_type"
+    t.integer  "image_5_file_size"
+    t.datetime "image_5_updated_at"
   end
 
   add_index "products", ["category_id"], name: "index_products_on_category_id"
