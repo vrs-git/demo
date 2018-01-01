@@ -30,11 +30,19 @@
     <%= f.submit "Log in",:class=>'btn btn-primary' %>
 
   </div>
+
+  <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+    <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+  <% end -%>
 <% end %>
 
+
+</div>
+<div class="border-form-div">
+
 <%= render "devise/shared/links" %>
+<p> New here? Sign up as Seller </p>
 </div>
 </div>
-<div class="container-fluid blok2">
-</div>
+
 

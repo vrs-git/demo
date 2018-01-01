@@ -1,5 +1,5 @@
 class Owners::RegistrationsController < Devise::RegistrationsController
-   
+
 
 
 
