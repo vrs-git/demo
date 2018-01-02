@@ -29,6 +29,9 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
 
+    @product.owner_id = current_user.id
+    @product.seller_name = current_user.email
+
     respond_to do |format|
       if @product.save
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
