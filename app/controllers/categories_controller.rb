@@ -40,6 +40,11 @@ before_action :authenticate_owner!
     end
   end
 
+  
+
+
+
+
   # PATCH/PUT /categories/1
   # PATCH/PUT /categories/1.json
   def update

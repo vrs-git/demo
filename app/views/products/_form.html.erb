@@ -11,74 +11,98 @@
     </div>
   <% end %>
 
-  <div class="container">
+ <div class="row">
+       <div class="col-sm-4 text-center">
+         <div class="kv-avatar">
+            <div class="file-loading">
+
+
+    <div class="form-group">
+    <%= f.label :image_1 , "Image 1" %><br>
+    <%= f.file_field :image_1 ,:class=>'form-control'  , :id => "avatar-1" %>
+
+       </div>
+
+         <div class="form-group">
+    <%= f.label :image_2 , "Image 2" %><br>
+    <%= f.file_field :image_2 ,:class=>'form-control'  , :id => "avatar-1" %>
+       </div>
+
+         <div class="form-group">
+    <%= f.label :image_3 , "Image 3" %><br>
+    <%= f.file_field :image_3 ,:class=>'form-control'  , :id => "avatar-1" %>
+       </div>
+
+         <div class="form-group">
+    <%= f.label :image_4 , "Image 4" %><br>
+    <%= f.file_field :image_4 ,:class=>'form-control'  , :id => "avatar-1" %>
+       </div>
+
+         <div class="form-group">
+    <%= f.label :image_5 , "Image 5" %><br>
+    <%= f.file_field :image_5 ,:class=>'form-control'  , :id => "avatar-1" %>
+       </div>
+            </div>
+            <div class="kv-avatar-hint"><small>Select file < 1500 KB</small></div>
+        </div>
+
+        </div>
+
+
+<div class="col-sm-8">
 
   <div class="form-group">
     <%= f.label :product_name, "Product Name"%><br>
     <%= f.text_field :product_name ,:class=>'form-control'  %>
   </div>
 
-  <div class="form-group">
-    <%= f.label :image_1 , "Image 1" %><br>
-    <%= f.file_field :image_1 ,:class=>'form-control' %>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :image_2 , "Image 2"%><br>
-    <%= f.file_field :image_2 ,:class=>'form-control' %>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :image_3, "Image 3"%><br>
-    <%= f.file_field :image_3 ,:class=>'form-control' %>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :image_4 ,"Image 4"%><br>
-    <%= f.file_field :image_4 ,:class=>'form-control' %>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :image_5, "Image 5" %><br>
-    <%= f.file_field :image_5 ,:class=>'form-control' %>
-  </div>
 
   <div class="form-group">
     <%= f.label :MRP ,"Maximum Retail Price"%><br>
     <%= f.number_field :MRP ,:class=>'form-control' %>
   </div>
+
   <div class="form-group">
     <%= f.label :SP, "Selling Price" %><br>
     <%= f.number_field :SP ,:class=>'form-control' %>
   </div>
+
   <div class="form-group">
     <%= f.label :discount ,"Discount" %><br>
     <%= f.number_field :discount ,:class=>'form-control'%>%
   </div>
+
   <div class="checkbox">
     <%= f.label :active %><br>
     <%= f.check_box :active %>
   </div>
+
   <div class="checkbox">
     <%= f.label :instock %><br>
     <%= f.check_box :instock %>
   </div>
 
-  </div>
 
-  <div class="container">
+</div>
+
+<div class="col-sm-8">
+ 
+
   <div class="form-group">
     <%= f.label :warranty_summary, "warranty Summary" %><br>
     <%= f.text_field :warranty_summary ,:class=>'form-control' %>
   </div>
+
   <div class="form-group">
     <%= f.label :highlights , "Highlights" %><br>
     <%= f.text_field :highlights ,:class=>'form-control' %>
   </div>
+
   <div class="form-group">
     <%= f.label :imp_note ,"Important Note"%><br>
     <%= f.text_field :imp_note ,:class=>'form-control' %>
   </div>
+
  
   <div class="dropdown">
     <%= f.label :category_id, "Select Category"%><br>
@@ -86,62 +110,78 @@
   </div>
 
   </div>
+ 
+  <div class="col-sm-8">
+ 
 
-  <div class="container">
-  
   <div class="form-group">
     <%= f.label :full_desp , "Full description" %><br>
     <%= f.text_area :full_desp  ,:class=>'form-control' %>
   </div>
+
   <div class="form-group">
     <%= f.label :specification , "Uplaod specification" %><br>
     <%= f.text_field :specification ,:class=>'form-control' %>
   </div>
+
   <div class="form-group">
     <%= f.label :installation ,"Installation" %><br>
     <%= f.text_field :installation ,:class=>'form-control' %>
   </div>
 
-  </div> 
+</div>
 
-  <div class="container">
+<div class="col-sm-3">
+ 
   <div class="form-group">
     <%= f.label :unit_in_order ,"No of Units In Order" %><br>
     <%= f.number_field :unit_in_order ,:class=>'form-control' %>
   </div>
+
   <div class="form-group">
     <%= f.label :unit_in_stock ,"No of units in Stock" %><br>
     <%= f.number_field :unit_in_stock ,:class=>'form-control' %>
   </div>
 
-  </div> 
 
-  <div class="container">
+
   <div class="form-group">
     <%= f.label :unit_length , "Length Of one unit" %><br>
     <%= f.number_field :unit_length ,:class=>'form-control' %>
   </div>
+
   <div class="form-group">
     <%= f.label :unit_bredth,"Bredth of one unit"%><br>
     <%= f.text_field :unit_bredth ,:class=>'form-control' %>
   </div>
+
   <div class="form-group">
     <%= f.label :unit_height,"Heigth of one unit" %><br>
     <%= f.number_field :unit_height ,:class=>'form-control' %>
   </div>
+
   <div class="form-group">
     <%= f.label :unit_weight ,"Weigth of one unit" %><br>
     <%= f.number_field :unit_weight ,:class=>'form-control' %>
   </div>
-  </div>
+ 
+</div>
 
-  <div class="container">
+<div class="col-sm-12">
+
+ 
   <div class="form-group">
     <%= f.label :additional_features ,"Additional Features" %><br>
     <%= f.text_area :additional_features ,:class=>'form-control' %>
   </div>
+  </div>
+</div>
+
+
+
 
   <div class="form-group">
     <%= f.submit "Add Product",:class=>'btn btn-primary btn-block'  %>
   </div>
+  <
 <% end %>
