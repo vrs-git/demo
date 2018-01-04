@@ -2,12 +2,15 @@ class ProductsController < ApplicationController
   
   before_action :authenticate_owner!
 
+
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
   # GET /products.json
   def index
     @products = Product.all
+
+
   end
 
   # GET /products/1
@@ -29,8 +32,8 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
 
-    @product.owner_id = current_user.id
-    @product.seller_name = current_user.email
+    @product.owner_id = current_owner.id
+    @product.seller_name = current_owner.email
 
     respond_to do |format|
       if @product.save
