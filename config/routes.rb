@@ -14,6 +14,8 @@ root 'home#index'
 
 get '/dashboard' => 'ownerhome#dashboard'
 
+  get 'user/products' => 'home#products'
+
 
  
   # Example of regular route:

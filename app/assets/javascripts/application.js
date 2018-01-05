@@ -36,3 +36,9 @@ $("#avatar-1").fileinput({
     layoutTemplates: {main2: '{preview} ' +  btnCust + ' {remove} {browse}'},
     allowedFileExtensions: ["jpg", "png", "gif"]
 });
+
+$(document).ready(function() {
+    $('#Carousel').carousel({
+        interval: 5000
+    })
+});
