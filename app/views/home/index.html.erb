@@ -83,6 +83,7 @@
 
         </div>
 
+
       <div class="container">
         <div class="row">
           <div id="adv_team_4_columns_carousel" class="carousel slide four_shows_one_move team_columns_carousel_wrapper" data-ride="carousel" data-interval="2000" data-pause="hover">
@@ -90,285 +91,287 @@
             <div class="carousel-inner" role="listbox">
               <!--========= 1st slide =========-->
               <div class="item">
+                <% @products.each do |product| %>
                 <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">
-                  <img src="http://placehold.it/150x150" alt="slider 01">
+                  <%=  image_tag product.image_1.url(:medium) %>
                   <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
+                    <h4><%= product.product_name %></h4>
                     <hr>
-                    <h5>PAKISTAN</h5>
+                    <h5><%= product.MRP %></h5>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-              </div>
-              <!--========= 2nd slide =========-->
-              <div class="item active">
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-              </div>
-              <!--========= 3rd slide =========-->
-              <div class="item">
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-              </div>
-              <!--========= 4th slide =========-->
-              <div class="item">
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-              </div>
-              <!--========= 5th Slide =========-->
-              <div class="item">
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-              </div>
-              <!--========= 6th Slide =========-->
-              <div class="item">
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">
-                  <img src="http://placehold.it/150x150" alt="slider 01">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-              </div>
-              <!--========= 7th Slide =========-->
-              <div class="item">
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">
-                  <img src="http://placehold.it/150x150" alt="slider 01">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-              </div>
-              <!--========= 8th Slide =========-->
-              <div class="item">
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">
-                  <img src="http://placehold.it/150x150" alt="slider 01">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Lahore</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">
-                  <img src="http://placehold.it/150x150" alt="slider 02">
-                  <div class="team_columns_item_caption">
-                    <h4>Karachi</h4>
-                    <hr>
-                    <h5>PAKISTAN</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    <% end %>
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--&lt;!&ndash;========= 2nd slide =========&ndash;&gt;-->
+              <!--<div class="item active">-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--&lt;!&ndash;========= 3rd slide =========&ndash;&gt;-->
+              <!--<div class="item">-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--&lt;!&ndash;========= 4th slide =========&ndash;&gt;-->
+              <!--<div class="item">-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--&lt;!&ndash;========= 5th Slide =========&ndash;&gt;-->
+              <!--<div class="item">-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--&lt;!&ndash;========= 6th Slide =========&ndash;&gt;-->
+              <!--<div class="item">-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 01">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--&lt;!&ndash;========= 7th Slide =========&ndash;&gt;-->
+              <!--<div class="item">-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 01">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--&lt;!&ndash;========= 8th Slide =========&ndash;&gt;-->
+              <!--<div class="item">-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-1">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 01">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-2">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Lahore</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-6 col-md-3 team_columns_item_image cloneditem-3">-->
+                  <!--<img src="http://placehold.it/150x150" alt="slider 02">-->
+                  <!--<div class="team_columns_item_caption">-->
+                    <!--<h4>Karachi</h4>-->
+                    <!--<hr>-->
+                    <!--<h5>PAKISTAN</h5>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
             <!--======= Navigation Buttons =========-->
             <!--======= Left Button =========-->
             <a class="left carousel-control team_columns_carousel_control_left adv_left" href="#adv_team_4_columns_carousel" role="button" data-slide="prev">
@@ -394,4 +397,5 @@
 
     </div>
   </div>
+</div>
 </div>
