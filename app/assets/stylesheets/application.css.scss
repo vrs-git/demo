@@ -138,12 +138,13 @@ div.shop-tab-menu div.list-group>a:last-child{
   -moz-border-bottom-right-radius: 0;
 }
 div.shop-tab-menu div.list-group>a.active,
-div.shop-tab-menu div.list-group>a.active .glyphicon,
+
 div.shop-tab-menu div.list-group>a.active .fa{
   background-color: #ffffff;
   background-image: #5A55A3;
   color: #5A55A3;
 }
+//div.shop-tab-menu div.list-group>a.active .glyphicon,
 
 div.shop-tab-content{
   background-color: #ffffff;
