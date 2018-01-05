@@ -76,23 +76,27 @@
         <!--.Carousel-->
 
 
-            <!-- Left and right controls -->
-            <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">-->
-              <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
-              <!--<span class="sr-only">Previous</span>-->
-            <!--</a>-->
-            <!--<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">-->
-              <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
-              <!--<span class="sr-only">Next</span>-->
-            <!--</a>-->
+             <!--Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
+
+          <h1>Products</h1>
+          <%= render 'product_carousel' %>
+
+          <%= link_to "More Products" , user_products_path %>
+
+          <hr>
 
 
           <h1>Categories</h1>
-           <%= render 'cat' %>
-          <hr>
-          <h1>Products</h1>
-           <!--render 'product_carousel'-->
+           <%= render 'category_crousal' %>
 
 
 
