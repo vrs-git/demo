@@ -9,9 +9,16 @@ gem 'sqlite3'
 
 gem 'devise'
 #Devise
+gem 'activeadmin'
+
+gem 'active_skin'
+
 
 gem 'bootstrap-sass'
 #bootstrap
+
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

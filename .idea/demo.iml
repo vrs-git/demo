@@ -28,10 +28,13 @@
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v4.2.8, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v4.2.8, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v4.2.8, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="active_skin (v0.0.12, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activeadmin (v1.2.0, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activejob (v4.2.8, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v4.2.8, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v4.2.8, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.2.8, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="arbre (v1.1.1, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v6.0.4, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v7.2.3, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.11, rbenv: 2.3.3) [gem]" level="application" />
@@ -52,11 +55,21 @@
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.18, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="font-awesome-rails (v4.7.0.2, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="formadmin (v0.2.1, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="formtastic (v3.1.5, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="formtastic_i18n (v0.6.0, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.1, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="has_scope (v0.7.1, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.9.1, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="inherited_resources (v1.8.0, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.7.0, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.3.1, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.6, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari (v1.1.1, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari-actionview (v1.1.1, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari-activerecord (v1.1.1, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari-core (v1.1.1, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.1.1, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.0, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.1, rbenv: 2.3.3) [gem]" level="application" />
@@ -69,6 +82,7 @@
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.8.1, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="paperclip (v5.0.0, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="polyamorous (v1.3.2, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.6.8, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.3, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v4.2.8, rbenv: 2.3.3) [gem]" level="application" />
@@ -77,6 +91,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.0.3, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.2.8, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v12.3.0, rbenv: 2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ransack (v1.8.4, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rb-fsevent (v0.10.2, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rb-inotify (v0.9.10, rbenv: 2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v4.3.0, rbenv: 2.3.3) [gem]" level="application" />
