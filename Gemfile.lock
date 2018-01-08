@@ -85,8 +85,6 @@ GEM
     ffi (1.9.18)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
-    formadmin (0.2.1)
-      activeadmin
     formtastic (3.1.5)
       actionpack (>= 3.2.13)
     formtastic_i18n (0.6.0)
@@ -240,7 +238,6 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   font-awesome-rails (~> 4.7, >= 4.7.0.2)
-  formadmin
   jbuilder (~> 2.0)
   jquery-rails
   paperclip (~> 5.0.0)

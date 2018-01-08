@@ -6,6 +6,8 @@
 @import "ownerhome";
 @import "products";
 
+
+
 .border-form-div {
   max-width: 300px;
   padding: 19px 29px 29px;
@@ -91,7 +93,7 @@ html, body {
 
 section {
   float: left;
-  padding: 30px 0;
+  padding: 0px 0;
   width: 100%;
 }
 .card-block {
@@ -108,9 +110,14 @@ i {
 .card {
   margin: 15px 0;
 }
-.card img {
+.media img {
   height: 150px;
   width: 100%;
+}
+
+.side-product img{ height: 150px;
+  width: 100%;
+
 }
 .rating {
   float: left;
@@ -338,3 +345,6 @@ h1,
 }
 
 // end
+
+//product_show
+
