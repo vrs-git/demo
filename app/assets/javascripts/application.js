@@ -42,3 +42,7 @@ $(document).ready(function() {
         interval: 5000
     })
 });
+
+jQuery(document).on('click', '.mega-dropdown', function(e) {
+    e.stopPropagation()
+})
