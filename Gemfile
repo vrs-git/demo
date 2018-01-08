@@ -9,6 +9,7 @@ gem 'sqlite3'
 
 gem 'devise'
 #Devise
+gem 'activeadmin'
 
 gem 'bootstrap-sass'
 #bootstrap

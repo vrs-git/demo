@@ -1,22 +1,10 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
+@import "categories";
+@import "ownerhome";
+@import "products";
 
 .border-form-div {
   max-width: 300px;
@@ -55,7 +43,7 @@ html, body {
   background-size: cover;
 }
 
-#ad a,span{
+#ad a{
   color: #70caff;
   text-shadow: 1px 1px 3px rgb(51, 153, 255);
   font: normal 30px 'Bitter', serif;
@@ -289,10 +277,10 @@ hr {
   padding: 0px;
 }
 
-.glyphicon {
-  font-size: 35px;
-  color:#6d6c6c;
-}
+//.glyphicon {
+//  font-size: 5px;
+//  color:#5A55A3;
+//}
 
 #sub-two{
   margin: 0px;
