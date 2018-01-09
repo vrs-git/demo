@@ -2,37 +2,14 @@
 <div class="pre-header">
   <div class="container">
     <div class="row">
-      <!-- BEGIN TOP BAR LEFT PART -->
-      <div class="col-md-6 col-sm-6 additional-shop-info">
-        <ul class="list-unstyled list-inline">
-          <li><i class="fa fa-phone"></i><span>+1 456 6717</span></li>
-          <!-- BEGIN CURRENCIES -->
-          <li class="shop-currencies">
-            <a href="javascript:void(0);">€</a>
-            <a href="javascript:void(0);">£</a>
-            <a href="javascript:void(0);" class="current">$</a>
-          </li>
-          <!-- END CURRENCIES -->
-          <!-- BEGIN LANGS -->
-          <li class="langs-block">
-            <a href="javascript:void(0);" class="current">English </a>
-            <div class="langs-block-others-wrapper"><div class="langs-block-others">
-              <a href="javascript:void(0);">French</a>
-              <a href="javascript:void(0);">Germany</a>
-              <a href="javascript:void(0);">Turkish</a>
-            </div></div>
-          </li>
-          <!-- END LANGS -->
-        </ul>
-      </div>
-      <!-- END TOP BAR LEFT PART -->
+
       <!-- BEGIN TOP BAR MENU -->
-      <div class="col-md-6 col-sm-6 additional-nav">
+      <div class="col-md-6 col-sm-6 additional-nav pull-right">
         <ul class="list-unstyled list-inline pull-right">
           <li><a href="shop-account.html">My Account</a></li>
           <li><a href="shop-wishlist.html">My Wishlist</a></li>
           <li><a href="shop-checkout.html">Checkout</a></li>
-          <li><a href="page-login.html">Log In</a></li>
+          <li><%= link_to 'Log in' , user_session_path %></li>
         </ul>
       </div>
       <!-- END TOP BAR MENU -->
@@ -277,36 +254,9 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-            Pages
-
-          </a>
-
-          <ul class="dropdown-menu">
-            <li class="active"><a href="shop-index.html">Home Default</a></li>
-            <li><a href="shop-index-header-fix.html">Home Header Fixed</a></li>
-            <li><a href="shop-index-light-footer.html">Home Light Footer</a></li>
-            <li><a href="shop-product-list.html">Product List</a></li>
-            <li><a href="shop-search-result.html">Search Result</a></li>
-            <li><a href="shop-item.html">Product Page</a></li>
-            <li><a href="shop-shopping-cart-null.html">Shopping Cart (Null Cart)</a></li>
-            <li><a href="shop-shopping-cart.html">Shopping Cart</a></li>
-            <li><a href="shop-checkout.html">Checkout</a></li>
-            <li><a href="shop-about.html">About</a></li>
-            <li><a href="shop-contacts.html">Contacts</a></li>
-            <li><a href="shop-account.html">My account</a></li>
-            <li><a href="shop-wishlist.html">My Wish List</a></li>
-            <li><a href="shop-goods-compare.html">Product Comparison</a></li>
-            <li><a href="shop-standart-forms.html">Standart Forms</a></li>
-            <li><a href="shop-faq.html">FAQ</a></li>
-            <li><a href="shop-privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="shop-terms-conditions-page.html">Terms &amp; Conditions</a></li>
-          </ul>
-        </li>
 
 
-        <li><a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes&amp;utm_source=download&amp;utm_medium=banner&amp;utm_campaign=metronic_frontend_freebie" target="_blank">Admin theme</a></li>
+
 
         <!-- BEGIN TOP SEARCH -->
         <li class="menu-search">
