@@ -11,38 +11,26 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.min
 //= require jquery_ujs
 //= require turbolinks
+//= require back-to-top
+//= require bootstrap.min
+//= require bootstrap.touchspin
+//= require bs-carousel
+//= require jquery.fancybox
+//= require jquery.slimscroll.min
+//= require jquery.zoom.min
+//= require jquery-migrate.min
+//= require owl.carousel.min
+//= require respond.min
 //= require_tree .
 
 
-var btnCust = '<button type="button" class="btn btn-secondary" title="Add picture tags" ' + 
-    'onclick="alert(\'Call your custom code here.\')">' +
-    '<i class="glyphicon glyphicon-tag"></i>' +
-    '</button>'; 
-$("#avatar-1").fileinput({
-    overwriteInitial: true,
-    maxFileSize: 1500,
-    showClose: false,
-    showCaption: false,
-    browseLabel: '',
-    removeLabel: '',
-    browseIcon: '<i class="glyphicon glyphicon-folder-open"></i>',
-    removeIcon: '<i class="glyphicon glyphicon-remove"></i>',
-    removeTitle: 'Cancel or reset changes',
-    elErrorContainer: '#kv-avatar-errors-1',
-    msgErrorClass: 'alert alert-block alert-danger',
-    defaultPreviewContent: '<img src="/uploads/default_avatar_male.jpg" alt="Your Avatar">',
-    layoutTemplates: {main2: '{preview} ' +  btnCust + ' {remove} {browse}'},
-    allowedFileExtensions: ["jpg", "png", "gif"]
+jQuery(document).ready(function() {
+    Layout.init();
+    Layout.initOWL();
+    Layout.initImageZoom();
+    Layout.initTouchspin();
+    Layout.initTwitter();
 });
-
-$(document).ready(function() {
-    $('#Carousel').carousel({
-        interval: 5000
-    })
-});
-
-jQuery(document).on('click', '.mega-dropdown', function(e) {
-    e.stopPropagation()
-})

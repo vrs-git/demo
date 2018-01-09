@@ -14,8 +14,8 @@ gem 'activeadmin'
 gem 'active_skin'
 
 
-gem 'bootstrap-sass'
-#bootstrap
+# gem 'bootstrap-sass'
+# #bootstrap
 
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 

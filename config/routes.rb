@@ -7,16 +7,24 @@ Rails.application.routes.draw do
                                          sessions: 'sessions' }
                                          
   devise_for :users
+
+  get '/' => 'application#home'
+  get '/checkout' => 'application#checkout'
+  get '/item' => 'application#item'
+
+  get '/product_list' => 'application#product_list'
+  get '/cart' => 'application#shopping_cart'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-root 'home#index'
-
-get '/dashboard' => 'ownerhome#dashboard'
-
-  get 'user/products' => 'home#products'
+# root 'home#index'
+#
+# get '/dashboard' => 'ownerhome#dashboard'
+#
+#   get 'user/products' => 'home#products'
 
 
  

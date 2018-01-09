@@ -15,4 +15,69 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit :account_update, keys: added_attrs
   end
 
+   def home
+
+   end
+
+   def checkout
+
+   end
+
+
+   def about
+
+   end
+
+   def account
+
+   end
+
+   def contacts
+
+   end
+
+   def faq
+
+   end
+
+   def goods_compare
+
+   end
+
+   def item
+
+   end
+
+   def privacy_policy
+
+   end
+
+   def product_list
+
+   end
+
+   def search_result
+
+   end
+
+   def shopping_cart
+
+   end
+
+   def shopping_cart_null
+
+   end
+
+   def standard_forms
+
+   end
+
+   def terms_condition
+
+   end
+
+   def wishlist
+
+   end
+
 end
