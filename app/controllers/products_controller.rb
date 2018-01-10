@@ -16,6 +16,9 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    @product_best_seller = Product.order('RANDOM()').limit(3);
+    @product_new = Product.order('RANDOM()').limit(4);
+
   end
 
   # GET /products/new
