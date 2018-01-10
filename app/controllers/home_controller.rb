@@ -6,8 +6,12 @@ before_action :authenticate_user!, only: [:dashboard]
 
     def index
 
-      @categories = Category.limit(10);
-      @products = Product.all
+      @categories = Category.limit(8);
+      @cat_ran_three = Category.order('RANDOM()').limit(3);
+      @cat_ran_two = Category.order('RANDOM()').limit(2);
+
+      @products = Product.limit(5);
+
 
 	end
     
