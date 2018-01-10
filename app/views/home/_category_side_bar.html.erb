@@ -1,0 +1,24 @@
+<!-- BEGIN SIDEBAR -->
+<div class="sidebar col-md-3 col-sm-4">
+  <ul class="list-group margin-bottom-25 sidebar-menu">
+    <% @categories.each do |category| %>
+
+      <li class="list-group-item clearfix">
+        <a href="shop-product-list.html">
+          <i class="fa fa-angle-right"></i>
+          <%= category.category_name %>
+        </a></li>
+
+    <% end %>
+
+    <li class="list-group-item clearfix">
+      <a href="shop-product-list.html">
+        <i class="fa fa-angle-right"></i>
+        More products
+      </a>
+    </li>
+
+
+  </ul>
+</div>
+<!-- END SIDEBAR -->

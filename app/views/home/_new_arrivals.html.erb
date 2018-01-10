@@ -1,0 +1,32 @@
+<!-- BEGIN SALE PRODUCT & NEW ARRIVALS -->
+<div class="row margin-bottom-40">
+  <!-- BEGIN SALE PRODUCT -->
+  <div class="col-md-12 sale-product">
+    <h2>New Arrivals</h2>
+    <div class="owl-carousel owl-carousel5">
+      <% @products.each do |product| %>
+        <div>
+          <div class="product-item">
+            <div class="pi-img-wrapper">
+              <%= image_tag product.image_1.url(:medium),class: "img-responsive",alt: "Berry Lace Dress" %>
+
+              <div>
+                <%= link_to "Zoom" , product.image_1.url(:medium) , class: "btn btn-default fancybox-button" %>
+
+                <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+              </div>
+            </div>
+            <h3><a href="shop-item.html"><%= product.product_name %></a></h3>
+            <div class="pi-price"><%= product.SP %></div>
+            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+            <div class="sticker sticker-sale"></div>
+          </div>
+        </div>
+
+      <% end %>
+
+    </div>
+  </div>
+  <!-- END SALE PRODUCT -->
+</div>
+<!-- END SALE PRODUCT & NEW ARRIVALS -->

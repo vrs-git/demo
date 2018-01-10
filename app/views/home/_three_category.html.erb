@@ -1,0 +1,37 @@
+<!-- BEGIN SIDEBAR & CONTENT -->
+<div class="row margin-bottom-40 ">
+
+  <%= render 'home/category_side_bar' %>
+
+  <!-- BEGIN CONTENT -->
+  <div class="col-md-9 col-sm-8">
+    <h2>Three items</h2>
+
+    <div class="owl-carousel owl-carousel3">
+      <% @cat_ran_three.each do |category| %>
+        <div>
+          <div class="product-item item active">
+            <div class="pi-img-wrapper ">
+
+              <%= image_tag category.cat_photo.url(:medium), class: "img-responsive", alt: "/" %>
+
+
+              <div>
+                <a href="assets/pages/img/products/k1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+              </div>
+            </div>
+            <h3><a href="shop-item.html"><%= category.category_name %></a></h3>
+
+            <div class="sticker sticker-new"></div>
+          </div>
+        </div>
+      <% end %>
+
+
+    </div>
+
+
+  </div>
+</div>
+<!-- END CONTENT -->
