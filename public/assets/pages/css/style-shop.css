@@ -40,8 +40,10 @@ Header and header elements
 	position: inherit;
 }
 .ecommerce .site-logo {
-	padding-top: 28px;
-	padding-bottom: 27px;
+	font-weight: 600;
+	padding: 0px;
+padding-bottom:5px;
+
 }
 .ecommerce .reduce-header .site-logo {
 	padding-top: 16px;
@@ -149,7 +151,7 @@ Header and header elements
 	border-radius: 16px !important;
 	float: left;
 	padding: 8px 39px 6px 13px;
-	line-height: 1.2;
+	line-height: 1.5;
 }
 .top-cart-info a {
 	color: #595f65;
@@ -784,13 +786,29 @@ div.radio.disabled span.checked, div.radio.disabled.active span.checked {
 
 .ecommerce .sidebar {
 	font: 15px 'PT Sans Narrow', sans-serif;
-	color: #3E4D5C;
+	color: white;
 	text-transform: uppercase;
 }
 .ecommerce .sidebar .list-group-item {
-    background: #fff;
+    background: #4484ce;
     padding: 8px 10px 6px;
+	color: white;
 }
+.ecommerce .sidebar a{
+	text-decoration: none;
+	color: white;
+}
+.ecommerce .sidebar li:hover{
+	color: white;
+	text-decoration: underline;
+
+}
+.ecommerce .sidebar a:hover{
+	color: white;
+	text-decoration: underline;
+
+}
+
 
 /* sidebar filter */
 .sidebar-filter {

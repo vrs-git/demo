@@ -729,14 +729,14 @@ body.page-header-fixed {
 	margin-top: 0;
 	z-index: 22;
 }
-.header-navigation .search-box:after { 
+.header-navigation .search-box:after {
 	top: -8px;
-	width: 0; 
+	width: 0;
 	height: 0;
 	right: 8px;
-	z-index: 2; 
-	content: " "; 
-	display: block; 
+	z-index: 2;
+	content: " ";
+	display: block;
 	position: absolute;
 	border-bottom: 8px solid #e6400c;
 	border-right: 8px solid transparent;
@@ -3029,7 +3029,7 @@ Styler Panel
 }
 
 .color-mode li.color-blue {
-  background: #64aed9;
+  background: #4484CE;
 }
 .color-mode li.color-red {
   background: #e84d1c;
