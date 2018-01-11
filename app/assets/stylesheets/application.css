@@ -10,19 +10,8 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+
  *= require_self
-  *= require animate
-   *= require bootstrap.min
-    *= require components
-     *= require custom
-      *= require font-awesome.min
-       *= require jquery.fancybox
-        *= require owl.carousel
-         *= require red
-          *= require slider
-           *= require style
-            *= require style-responsive
-             *= require style-shop
+
 
  */

@@ -22,5 +22,23 @@ module EComm
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.assets.enabled = true
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "zoom")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" ,"bootstrap-touchspin")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "jquery-slimscroll")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins", "font-awesome","css")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "bootstrap","css")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "bootstrap","js")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","pages" ,"css")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","corporate" ,"css")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","corporate" ,"js")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","corporate" ,"scripts")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","pages" ,"scripts")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","corporate" ,"css" ,"themes")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "fancybox","source")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "owl.carousel","assets")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "owl.carousel")
+
   end
 end
