@@ -18,7 +18,7 @@
             </div>
             <h3><%= link_to (  product.product_name), url_for(controller: :products , action: :show , id: product.id) , method: :get %></h3>
             <!--<h3><a href="shop-item.html"><%= product.product_name %></a></h3>-->
-            <div class="pi-price"><%= product.SP %></div>
+            <div class="pi-price">Rs <%= product.SP %></div>
             <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
             <div class="sticker sticker-sale"></div>
           </div>
