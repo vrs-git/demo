@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  resources :categories
-  resources :products
-  devise_for :owners , :controllers => { registrations: 'registrations' ,
-                                         sessions: 'sessions' }
-                                         
-  devise_for :users
 
   root 'home#index'
   get '/checkout' => 'application#checkout'
@@ -14,6 +9,15 @@ Rails.application.routes.draw do
 
   get '/product_list' => 'application#product_list'
   get '/cart' => 'application#shopping_cart'
+
+  resources :reviews
+
+  resources :categories
+  resources :products
+  devise_for :owners , :controllers => { registrations: 'registrations' ,
+                                         sessions: 'sessions' }
+
+  devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

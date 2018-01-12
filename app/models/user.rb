@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable ,
          :authentication_keys => [:login]
 
+  has_many :reviews
 
   validates :phnumber,
   :presence => true,
@@ -36,4 +37,6 @@ class User < ActiveRecord::Base
         where(conditions.to_hash).first
       end
     end
+
+
 end

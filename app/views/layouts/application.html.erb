@@ -30,6 +30,7 @@
   <meta property="og:url" content="-CUSTOMER VALUE-">
 
   <link rel="shortcut icon" href="favicon.ico">
+  <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"><!-- for slider-range -->
 
   <!-- Fonts START -->
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
@@ -46,6 +47,9 @@
   <%= stylesheet_link_tag    'animate', media: 'all', 'data-turbolinks-track' => "true" %>
 
   <%= stylesheet_link_tag    'owl.carousel', media: 'all', 'data-turbolinks-track' => "true" %>
+  <%= stylesheet_link_tag    'rateit', media: 'all', 'data-turbolinks-track' => "true" %>
+
+  <%= stylesheet_link_tag    'uniform.default', media: 'all', 'data-turbolinks-track' => "true" %>
   <!-- Page level plugin styles END -->
 
   <!-- Theme styles START -->
@@ -90,15 +94,18 @@
 <%= javascript_include_tag 'bootstrap.touchspin', 'data-turbolinks-track' => "true" %>
 <%= javascript_include_tag 'layout', 'data-turbolinks-track' => "true" %>
 <%= javascript_include_tag 'bs-carousel', 'data-turbolinks-track' => "true" %>
+<%= javascript_include_tag 'jquery.rateit', 'data-turbolinks-track' => "true" %>
+<%= javascript_include_tag 'jquery.uniform.min', 'data-turbolinks-track' => "true" %>
 
 
 <script type="text/javascript">
     jQuery(document).ready(function() {
         Layout.init();
         Layout.initOWL();
+        Layout.initTwitter();
         Layout.initImageZoom();
         Layout.initTouchspin();
-        Layout.initTwitter();
+        Layout.initUniform();
     });
 </script>
 

@@ -2,6 +2,8 @@ class Product < ActiveRecord::Base
   belongs_to :owner
   belongs_to :category
 
+  has_many :reviews
+
 
   scope :inactive , -> { where(active: false) }
   scope :out_of_stock , -> { where(instock: false) }
@@ -18,4 +20,9 @@ class Product < ActiveRecord::Base
 	validates_attachment_content_type :image_3, content_type: /\Aimage\/.*\z/
 	validates_attachment_content_type :image_4, content_type: /\Aimage\/.*\z/
 	validates_attachment_content_type :image_5, content_type: /\Aimage\/.*\z/
+
+
+  def name
+    return self.product_name
+  end
 end
