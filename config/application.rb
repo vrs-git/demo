@@ -24,6 +24,9 @@ module EComm
     config.active_record.raise_in_transactional_callbacks = true
     config.assets.enabled = true
     config.assets.paths << Rails.root.join("app", "assets", "additional","plugins")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "uniform" )
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "rateit" , "src")
+    config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "uniform" , "css" )
     config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "zoom")
     config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" ,"bootstrap-touchspin")
     config.assets.paths << Rails.root.join("app", "assets", "additional","plugins" , "jquery-slimscroll")

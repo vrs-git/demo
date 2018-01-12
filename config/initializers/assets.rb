@@ -24,7 +24,10 @@ Rails.application.config.assets.precompile += %w( plugins/bootstrap/js/bootstrap
 Rails.application.config.assets.precompile += %w( corporate/scripts/back-to-top.js )
 Rails.application.config.assets.precompile += %w( plugins/jquery-slimscroll/jquery.slimscroll.min.js )
 Rails.application.config.assets.precompile += %w( plugins/fancybox/source/jquery.fancybox.pack.js )
-
+Rails.application.config.assets.precompile += %w( plugins/rateit/src/rateit.css )
+Rails.application.config.assets.precompile += %w( plugins/uniform/css/uniform.css )
+Rails.application.config.assets.precompile += %w( plugins/rateit/src/jquery.rateit.js )
+Rails.application.config.assets.precompile += %w( plugins/uniform/jquery.uniform.min.js )
 Rails.application.config.assets.precompile += %w( plugins/owl.carousel/owl.carousel.min.js )
 Rails.application.config.assets.precompile += %w( plugins/zoom/jquery.zoom.min.js )
 Rails.application.config.assets.precompile += %w( plugins/bootstrap-touchspin/bootstrap.touchspin.js )
