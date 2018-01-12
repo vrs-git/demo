@@ -11,6 +11,7 @@ class ProductsController < ApplicationController
     @products = Product.all
 
 
+
   end
 
   # GET /products/1
@@ -19,6 +20,8 @@ class ProductsController < ApplicationController
     @product_best_seller = Product.order('RANDOM()').limit(3);
     @product_new = Product.order('RANDOM()').limit(4);
     @categories = Category.order('RANDOM()').limit(8);
+    @categoriesall = Category.all;
+    @cat_ran_three = Category.order('RANDOM()').limit(3);
 
   end
 
